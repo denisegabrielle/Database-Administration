@@ -39,7 +39,7 @@ $result = executeQuery($query);
     </nav>
 
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="title">
           <h1>User Information</h1>
         </div>
