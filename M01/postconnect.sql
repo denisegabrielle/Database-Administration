@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2024 at 07:57 AM
+-- Generation Time: Nov 09, 2024 at 08:20 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -65,7 +65,8 @@ INSERT INTO `addresses` (`addressID`, `cityID`, `provinceID`) VALUES
 (36, 11, 1),
 (37, 11, 1),
 (38, 4, 3),
-(39, 7, 10);
+(39, 7, 10),
+(40, 7, 6);
 
 -- --------------------------------------------------------
 
@@ -213,8 +214,7 @@ INSERT INTO `provinces` (`provinceID`, `provinceName`) VALUES
 (6, 'Cebu'),
 (7, 'Davao del Sur'),
 (8, 'Negros Occidental'),
-(9, 'Zamboanga del Sur'),
-(10, 'Ceby');
+(9, 'Zamboanga del Sur');
 
 -- --------------------------------------------------------
 
@@ -262,7 +262,7 @@ INSERT INTO `userinfo` (`userInfoID`, `userID`, `addressID`, `lastName`, `firstN
 (9, 9, 1, 'Wilson', 'Noah', '2001-07-04', '0917-345-6789'),
 (46, 26, 36, 'Mendoza', 'Angelica ', '1996-06-21', '0914-639-8725'),
 (48, 28, 38, 'Suarez', 'Denise Gabrielle', '2004-08-03', '0985-215-6523'),
-(49, 29, 39, 'Bautista', 'Andrea', '1999-03-17', '0912-483-6732');
+(50, 30, 40, 'Bautista', 'Andrea', '1999-12-15', '0912-483-6732');
 
 -- --------------------------------------------------------
 
@@ -294,7 +294,7 @@ INSERT INTO `users` (`userID`, `messageID`, `username`, `email`, `password`) VAL
 (9, 0, 'noahwilson', 'noahwilson@email.com', 'noahwilson123'),
 (26, 0, 'itsmeangel', 'angelicamendoza@email.com', 'angel123'),
 (28, 0, 'dgms', 'sdenisegabrielle@email.com', 'postconnect123'),
-(29, 0, 'andreadump', 'andreadump@email.com', 'andreadump123');
+(30, 0, 'andreadump', 'andreadump@email.com', 'andreadump123');
 
 --
 -- Indexes for dumped tables
@@ -386,7 +386,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `addresses`
 --
 ALTER TABLE `addresses`
-  MODIFY `addressID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `addressID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `cities`
@@ -452,13 +452,13 @@ ALTER TABLE `reactions`
 -- AUTO_INCREMENT for table `userinfo`
 --
 ALTER TABLE `userinfo`
-  MODIFY `userInfoID` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `userInfoID` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userID` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `userID` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
