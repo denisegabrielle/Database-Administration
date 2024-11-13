@@ -17,7 +17,7 @@ JOIN users u ON ui.userID = u.userID
 JOIN addresses a ON ui.addressID = a.addressID
 JOIN cities c ON a.cityID = c.cityID
 JOIN provinces pr ON a.provinceID = pr.provinceID
-ORDER BY ui.userID;";
+ORDER BY ui.userID";
 $result = executeQuery($query);
 
 ?>
