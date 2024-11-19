@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2024 at 03:18 PM
+-- Generation Time: Nov 19, 2024 at 10:50 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -253,14 +253,9 @@ CREATE TABLE `userinfo` (
 --
 
 INSERT INTO `userinfo` (`userInfoID`, `userID`, `addressID`, `lastName`, `firstName`, `birthDate`, `contactNumber`) VALUES
-(1, 3, 3, 'Thompson', 'Mia', '2006-09-22', '0917-456-7890'),
-(2, 2, 2, 'Johnson', 'Ava', '2005-03-25', '0907-567-8901'),
-(3, 1, 1, 'Carter', 'Ethan', '2004-04-01', '0912-678-9012'),
-(4, 4, 3, 'Johnson', 'Emily', '2000-05-20', '0997-789-0123'),
 (5, 5, 2, 'Davis', 'Emma', '2000-02-14', '0952-456-7890'),
 (6, 6, 2, 'Garcia', 'Ava', '1998-12-05', '0917-678-9012'),
 (7, 7, 1, 'Martinez', 'Oliver', '1999-09-29', '0917-567-8901'),
-(9, 9, 1, 'Wilson', 'Noah', '2001-07-04', '0917-345-6789'),
 (46, 26, 36, 'Mendoza', 'Angelica ', '1996-06-21', '0914-639-8725'),
 (48, 28, 38, 'Suarez', 'Denise Gabrielle', '2004-08-03', '0985-215-6523');
 
