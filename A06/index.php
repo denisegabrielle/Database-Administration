@@ -1,8 +1,8 @@
 <?php
 include('connect.php');
 
-if (isset($_POST['id'])) {
-  $userID = $_POST['id'];
+if (isset($_POST['btnDelete'])) {
+  $userID = $_POST['btnDelete'];
 
   $deleteQuery = "DELETE FROM userInfo WHERE userID = '$userID'";
   $deleteResult = executeQuery($deleteQuery);
@@ -26,7 +26,6 @@ JOIN cities c ON a.cityID = c.cityID
 JOIN provinces pr ON a.provinceID = pr.provinceID
 ORDER BY ui.userID";
 $result = executeQuery($query);
-
 ?>
 
 <!doctype html>
@@ -67,12 +66,10 @@ $result = executeQuery($query);
               <h5 class="card-title"><?php echo $row['cityName'] . ',' . ' ' . $row['provinceName']; ?></h5>
               <h5 class="card-title"><?php echo $row['contactNumber']; ?></h5>
               <h5 class="card-title"><?php echo $row['birthDate']; ?></h5>
-
-
             </div>
             <div class="d-flex justify-content-end p-2">
               <form method="POST">
-                <input type="hidden" name="id" value="<?php echo $row['userID']; ?>">
+                <input type="hidden" name="btnDelete" value="<?php echo $row['userID']; ?>">
                 <button class="delete-button" style="background-color: transparent; border: none" type="submit">
                   <i class="bi bi-trash"></i>
                 </button>
