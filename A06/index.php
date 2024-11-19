@@ -77,7 +77,7 @@ $result = executeQuery($query);
             </div>
           </div>
         </div>
-      <?php } ?>
+      <?php } ?>  
     </div>
   </div>
 </body>
