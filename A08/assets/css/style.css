@@ -1,0 +1,35 @@
+body {
+    background-color: #AECAD1;
+    color: #0B111D;
+}
+
+.navbar {
+    background-color: #57727F;
+}
+
+.card, option {
+    background-color: #C7DEE2;
+}
+
+.card{
+    background-color: #86ADB8;
+    
+}
+
+.card table, 
+.card table tr, 
+.card table th, 
+.card table td {
+    background-color: #86ADB8;
+}
+
+.btn {
+    background-color: #57727F;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #AECAD1;
+    border-radius: 50px;
+    
+}

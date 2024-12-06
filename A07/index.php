@@ -84,7 +84,9 @@ $result = executeQuery($query);
       </div>
     </div>
     <div class="row">
-      <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+      <?php 
+      while ($row = mysqli_fetch_assoc($result)) {
+      ?>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <div class="card mt-4 text-center">
             <div class="card-body">
@@ -120,7 +122,9 @@ $result = executeQuery($query);
             </div>
           </div>
         </div>
-      <?php } ?>
+      <?php
+      }
+      ?>
     </div>
   </div>
 
@@ -133,20 +137,20 @@ $result = executeQuery($query);
         </div>
         <div class="modal-body">
           <form action="" method="POST">
-            <input type="hidden" id="userID" name="userID">
+            <input type="hidden" id="userID" name="userID" value = <?php echo $row['userID']; ?> >
             <div class="row">
               <div class="col">
-                <input type="text" id="firstName" class="form-control info-input mb-2" name="firstName">
+                <input type="text" id="firstName" class="form-control info-input mb-2" name="firstName"  value = <?php echo $row['firstName']; ?>>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="text" id="lastName" class="form-control info-input mb-2" name="lastName">
+                <input type="text" id="lastName" class="form-control info-input mb-2" name="lastName"  >
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="text" id="userName" class="form-control info-input mb-2" name="userName">
+                <input type="text" id="userName" class="form-control info-input mb-2" name="userName" >
               </div>
             </div>
             <div class="row">
